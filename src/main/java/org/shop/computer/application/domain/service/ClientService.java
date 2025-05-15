@@ -4,13 +4,14 @@ import jakarta.persistence.EntityNotFoundException;
 import org.shop.computer.adapter.out.peristence.ClientRepository;
 import org.shop.computer.application.domain.model.Client;
 import org.shop.computer.application.port.in.client.ClientUseCase;
+import org.shop.computer.application.port.out.client.ClientOutputPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class ClientService implements ClientUseCase {
+public class ClientService implements ClientUseCase, ClientOutputPort {
 
     private final ClientRepository clientRepository;
 
