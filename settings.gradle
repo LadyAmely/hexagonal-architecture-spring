@@ -1,0 +1,6 @@
+rootProject.name = 'computer'
+
+include 'model'
+include 'application'
+include 'adapter-in'
+include 'adapter-out'
